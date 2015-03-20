@@ -1,0 +1,55 @@
+## Put comments here that give an overall description of what your ## functions do
+
+## This is a special vector which take the range of numbers from and set and retrieve a mean or an average value.  The numeric will a be an empty character 
+makeVector <- function(x = numeric()) {
+## This funciton defines R to ignore the NULL or blank spaces variable within the dataset##
++         m <- NULL
+## This function sets the output function(what will be returned)
++         set <- function(y) {
+
+## This function sets  a special vector to bind x and y together and ignore NULL or NA
+
+## This function defines the parameters of the vector and ignores NULL values
++                 x <<- y
++                 m <<- NULL
++         }
+##  This function gets the value of x (anynumber between 1:10000
++         get <- function() x
+## This function sets the value of the number of sets of numbers in a column and x is the MAX  defines the output the mean or average of the vector
++         setmean <- function(mean) m <<- mean
+## This function retrieves the mean result and return it in the form of m
++         getmean <- function() m
+
+## This function sets the order of the list that R will retrieve
++         list(set = set, get = get,
++              setmean = setmean,
++              getmean = getmean)
+}
+
+## Write a short comment describing this function
+
+This function sets the mean of two distinct points x and y
+
+x and y on an array from 1:10
+
+input:  1:10 
+vector caluculates mean which i
+m = 5.5	mean
+
+This vector creates a set of ordered pairs with of end points.  x is ther range of numbers (input) and y is the output or the mean.  This is a good plotting tool to see where the average within a range of the numbers.  It saves a lot of work on an excel spreadsheet 
+
+makeCacheMatrix <- function(x = matrix()) {
+
+}
+## Write a short comment describing this function
+
+This function is used to cache or inverse of matrix(copies a mirror image of the matrix).  For those with large, complex databases with a lot of forumlas.  This will save a copy just a cache is on computer so it does not get lost. It acts as a placeholder
+
+
+cacheSolve <- function(x, ...) {
+        ## Return a matrix that is the inverse of 'x'
+}
+
+The Solve function returns the inverse of x (mirror image) with its dataframe.
+
+
